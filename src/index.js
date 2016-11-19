@@ -6,11 +6,13 @@ import 'angular-material';
 import 'angular-resource';
 import routesConfig from './routes';
 
+import 'angular-material/angular-material.css';
 import './index.scss';
 
-import {Heroes} from './app/Heroes.service';
-import {heroes} from './app/heroes';
-import {hero} from './app/hero';
+// services
+import {Heroes} from './app/services/Heroes.service';
+// component
+import {heroes} from './app/heroes/heroes';
 
 export const app = 'app';
 
@@ -21,6 +23,7 @@ angular
     'ngMaterial'
   ])
   .config(routesConfig)
+  .constant('api', 'http://hahow-recruit.herokuapp.com')
   .factory('Heroes', Heroes)
   .component('heroes', heroes)
   .component('hero', hero);
