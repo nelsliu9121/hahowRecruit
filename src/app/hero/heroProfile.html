@@ -1,0 +1,12 @@
+<md-list>
+  <md-list-item ng-repeat="(key, p) in hpCtrl.profile">
+    <p>{{key}}</p>
+    <md-button class="md-secondary" ng-click="hpCtrl.increase(key)">+</md-button>
+    <p class="md-secondary">{{p}}</p>
+    <md-button class="md-secondary" ng-click="hpCtrl.decrease(key)">-</md-button>
+  </md-list-item>
+</md-list>
+<div>
+  <p>剩餘點數：</p>
+  <md-button class="md-raised md-primary" ng-click="hpCtrl.save()">Save</md-button>
+</div>
