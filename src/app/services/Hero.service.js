@@ -1,15 +1,15 @@
 export const Hero = ($resource, api) => {
-  return $resource(`${api}/heroes/:heroId`, {}, {
+  return $resource(`${api}/heroes/:heroId/profile`, {}, {
     get: {
-      action: 'GET'
+      method: 'GET',
+      url: `${api}/heroes/:heroId`
     },
     profile: {
-      action: 'GET',
-      url: `${api}/heroes/:heroId/profile`
+      method: 'GET'
     },
-    update: {
-      action: 'PATCH',
-      url: `${api}/heroes/:heroId/profile`
+    save: {
+      method: 'PATCH',
+      responseType: 'text'
     }
   });
 };

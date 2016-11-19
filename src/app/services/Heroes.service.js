@@ -1,7 +1,7 @@
 export const Heroes = ($resource, api) => {
   return $resource(`${api}/heroes`, {}, {
     get: {
-      action: 'GET',
+      method: 'GET',
       isArray: true
     }
   });
