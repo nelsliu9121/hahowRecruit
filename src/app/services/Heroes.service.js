@@ -6,3 +6,4 @@ export const Heroes = ($resource, api) => {
     }
   });
 };
+Heroes.$inject = ['$resource', 'api'];

@@ -31,3 +31,4 @@ export class heroProfileCtrl {
     });
   }
 }
+heroProfileCtrl.$inject = ['$state', '$mdToast', 'Hero'];

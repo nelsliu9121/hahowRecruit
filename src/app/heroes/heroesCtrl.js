@@ -5,3 +5,4 @@ export class heroesCtrl {
     });
   }
 }
+heroesCtrl.$inject = ['$state', 'Heroes'];
