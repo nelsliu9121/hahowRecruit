@@ -8,7 +8,7 @@ export class heroProfileCtrl {
    * @requires Hero.service
    *
    * @description
-   * Logic for hero profile page
+   * Logic for hero profile component
    */
   constructor($state, $mdToast, Hero) {
     this.Hero = Hero;

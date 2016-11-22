@@ -1,8 +1,16 @@
 export class heroesCtrl {
+  /**
+   * @ngdoc controller
+   * @name app.controller:heroesCtrl
+   *
+   * @requires $state
+   * @requires Heroes.service
+   *
+   * @description
+   * Controller for heroes component
+   */
   constructor($state, Heroes) {
-    Heroes.get({}, data => {
-      this.heroes = data;
-    });
+    this.heroes = Heroes.get({});
   }
 }
 heroesCtrl.$inject = ['$state', 'Heroes'];

@@ -2,11 +2,11 @@
 
 ## Overview
 
-HAHOW is under attack, and heroes must come to rescue.
+HAHOW is under attack, and the heroes must come to rescue.
 
 ## How to Run?
 
-1. Put the package on a web server. (any one that serves HTML correctly will do)
+1. Put everything under `/dist` onto a web server. (any one that serves HTML correctly will do)
 2. Open browser and go to the directory that points to `index.html`.
 3. **Voila!**
 
@@ -30,8 +30,8 @@ This section addresses the reasoning and utilities I use to do documentation.
 
 1. Following standard `ngDoc` notation.
 2. In the beginning of every `.js` files.
-3. On methods that will output different values.
 
 ## Obstacles
 
-1. 
+1. Figuring out how to use ngResource, which turned out to be very useful
+2. Found out that Angular's Dependency Injection is failing build process without error report.
