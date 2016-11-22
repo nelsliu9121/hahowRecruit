@@ -1,4 +1,15 @@
 export class heroProfileCtrl {
+  /**
+   * @ngdoc controller
+   * @name app.controller:heroProfileCtrl
+   *
+   * @requires $state
+   * @requires $mdToast
+   * @requires Hero.service
+   *
+   * @description
+   * Logic for hero profile page
+   */
   constructor($state, $mdToast, Hero) {
     this.Hero = Hero;
     this.heroId = $state.params.heroId;
@@ -7,6 +18,10 @@ export class heroProfileCtrl {
     this.profile = Hero.profile({heroId: this.heroId});
   }
 
+  /**
+  * Increase attribute value by one
+  * @param {string} key Attribute name
+  */
   increase(key) {
     if (this.remaining > 0) {
       this.profile[key]++;
@@ -14,6 +29,10 @@ export class heroProfileCtrl {
     }
   }
 
+  /**
+  * Decrease attribute value by one
+  * @param {string} key Attribute name
+  */
   decrease(key) {
     if (this.profile[key] > 0) {
       this.profile[key]--;
@@ -21,6 +40,9 @@ export class heroProfileCtrl {
     }
   }
 
+  /**
+   * Save updated info to server
+   */
   save() {
     if (this.remaining !== 0) {
       return false;
