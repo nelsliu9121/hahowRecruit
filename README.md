@@ -21,9 +21,17 @@ HAHOW is under attack, and heroes must come to rescue.
 
 ## Third-party Libraries
 
-* Angular Material
-* Angular Resource
+* **Angular Material**: Angular powered Material Design UI framework.
+* **Angular Resource**: Tool belt that is built to connect RESTful API services.
 
 ## Comment Annotating
 
+This section addresses the reasoning and utilities I use to do documentation.
+
+1. Following standard `ngDoc` notation.
+2. In the beginning of every `.js` files.
+3. On methods that will output different values.
+
 ## Obstacles
+
+1. 
