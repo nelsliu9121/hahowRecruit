@@ -1,0 +1,4 @@
+<section layout="row" md-content layout-wrap>
+  <hero-card flex-xs="50" flex-sm="33" flex-gt-sm="25" ng-repeat="hero in hCtrl.heroes" hero="hero" ui-sref="heroes.profile({heroId: hero.id})"></hero-card>
+</section>
+<section layout="column" ui-view="detail"></section>

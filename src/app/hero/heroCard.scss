@@ -1,0 +1,9 @@
+.hero-card {
+  cursor: pointer;
+
+  &.active,
+  &:hover {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 4px 3px 2px rgba(0, 0, 0, 0.12);
+  }
+}

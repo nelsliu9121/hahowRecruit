@@ -1,4 +1,11 @@
+@import 'app/hero/heroCard';
+
 .container {
-  width: 960px;
+  width: 720px;
   margin: 0 auto;
+}
+@media (max-width: 720px) {
+  .container {
+    width: 100%;
+  }
 }

@@ -8,13 +8,17 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
     .state('heroes', {
       url: '/heroes',
-      template: '<heroes></heroes>'
+      views: {
+        "": {
+          template: '<heroes></heroes>'
+        }
+      }
     })
     .state('heroes.profile', {
       url: '/:heroId',
       views: {
-        'detail': {
-          template: '<hero></hero>'
+        detail: {
+          template: '<hero-profile></hero-profile>'
         }
       }
     });

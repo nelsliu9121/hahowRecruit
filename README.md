@@ -2,20 +2,17 @@
 
 ## Overview
 
-HAHOW is under attack, and heroes must come to rescue.
+HAHOW is under attack, and the heroes must come to rescue.
 
 ## How to Run?
 
-1. Put the package on a web server. (any one that serves HTML correctly will do)
+1. Put everything under `/dist` onto a web server. (any one that serves HTML correctly will do)
 2. Open browser and go to the directory that points to `index.html`.
 3. **Voila!**
-
-_P.S. Better put the package on the same machine as the API, in case of the CORS regulation._
 
 ## Frameworks
 
 * Front-end: **AngularJS**
-* Unit Testing: **Karma** **Jasmine**
 * Package Management: **Yarn** **Webpack**
 * Task Management: **GulpJS**
 * Scaffolding: **Yeoman**
@@ -24,4 +21,17 @@ _P.S. Better put the package on the same machine as the API, in case of the CORS
 
 ## Third-party Libraries
 
-* Angular Material
+* **Angular Material**: Angular powered Material Design UI framework.
+* **Angular Resource**: Tool belt that is built to connect RESTful API services.
+
+## Comment Annotating
+
+This section addresses the reasoning and utilities I use to do documentation.
+
+1. Following standard `ngDoc` notation.
+2. In the beginning of every `.js` files.
+
+## Obstacles
+
+1. Figuring out how to use ngResource, which turned out to be very useful
+2. Found out that Angular's Dependency Injection is failing build process without error report.
